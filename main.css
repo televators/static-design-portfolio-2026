@@ -1,3 +1,49 @@
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Syne", sans-serif;
+}
+
+p {
+  color: #C9EDD4;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.header__logo {
+  max-width: 150px;
+  margin-top: 3rem;
+}
+
+.header__heading {
+  font-size: 2rem;
+  margin-block: 2rem 1rem;
+  font-family: Syne;
+  font-weight: 900;
+  color: #329550;
+}
+
+.header__subheading {
+  font-size: 1.3rem;
+  font-family: "Hanken Grotesk";
+  font-weight: 300;
+  letter-spacing: 0.035em;
+  color: #89D5A0;
+}
+
+.header__copy {
+  max-width: 32ch;
+  text-align: center;
+}
+
+
+/* Work Grid */
 .work-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -19,7 +65,6 @@
 .work-item {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: ;
   align-content: start;
   align-items: start;
 }
@@ -29,6 +74,7 @@
 }
 
 .work-item-title {
+  color: #C9EDD4;
   font-size: 1.2rem;
 }
 
@@ -37,7 +83,7 @@
 }
 
 .work-item-category {
-  background: darkslategray;
+  background: rgb(47, 79, 68);
   display: inline-block;
   width: auto;
   flex: 0 1 auto;
