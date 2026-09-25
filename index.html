@@ -3,14 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark">
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="pico-main/css/pico.min.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://unpkg.com/litelight-js@1.2.0/dist/lite-light.min.css">
-    <script type="module">
-      import { init } from 'https://unpkg.com/litelight-js@1.2.0/dist/lite-light.min.js';
-      init();
-    </script>
     <title>Justin Higgs - Portfolio</title>
   </head>
   <body>
@@ -28,26 +24,63 @@
         </h3>
         
         <div class="work-grid work-grid--web">
+        
+          <!-- Me -->
           <div class="work-item">
-            <img src="img/web/m4c.png" alt="" class="work-item-thumb">
+            <a href="/video/personal-site-draft-demo-vid.webm" data-fslightbox data-autoplay data-caption="My new personal site. In progress but I think it's cool." title="View full item in a pop up gallery">
+              <img src="img/web/me.png" alt="" class="work-item-thumb">
+            </a>
+            <h3 class="work-item-title">Personal Site (In Progress)</h3>
+            <div class="work-item-categories">
+              <h6 class="work-item-category">Full-Stack Development</h6>
+              <h6 class="work-item-category">Design</h6>
+            </div>
+          </div>
+
+          <!-- FGA -->
+          <div class="work-item">
+            <a href="https://architectsfgh.com/" title="Fitzgerald Gray Hagan Architects" target="_blank" rel="noreferrer">
+              <img src="img/web/fga.png" alt="" class="work-item-thumb">
+            </a>
+            <h3 class="work-item-title">Fitzgerald Gray Hagan Architects</h3>
+            <div class="work-item-categories">
+              <h6 class="work-item-category">Front-End Development</h6>
+              <h6 class="work-item-category">UX Consulting</h6>
+            </div>
+          </div>
+          
+          <!-- M4C -->
+          <div class="work-item">
+            <a href="https://marketingforchange.com/" title="Marketing for Change" target="_blank" rel="noreferrer">
+              <img src="img/web/m4c.png" alt="" class="work-item-thumb">
+            </a>
             <h3 class="work-item-title">Marketing for Change</h3>
             <h6 class="work-item-category">Full-Stack Development</h6>
           </div>
           
+          <!-- USPHS -->
           <div class="work-item">
-            <img src="img/web/usphs.png" alt="" class="work-item-thumb">
+            <a href="https://www.usphs.gov/" title="US Public Health Service: Commissioned Corps" target="_blank" rel="noreferrer">
+              <img src="img/web/usphs.png" alt="" class="work-item-thumb">
+            </a>
             <h3 class="work-item-title">US Public Health Service: Commissioned Corps</h3>
             <h6 class="work-item-category">UI Development</h6>
           </div>
           
+          <!-- EQ -->
           <div class="work-item">
-            <img src="img/web/equable.png" alt="" class="work-item-thumb">
+            <a href="https://web.archive.org/web/20230315155332/https://equable.org/" title="Equable" target="_blank" rel="noreferrer">
+              <img src="img/web/equable.png" alt="" class="work-item-thumb">
+            </a>
             <h3 class="work-item-title">Equable</h3>
             <h6 class="work-item-category">Full-Stack Development</h6>
           </div>
           
+          <!-- MLX -->
           <div class="work-item">
-            <img src="img/web/mlx--prelaunch-landing-page---crop.jpg" alt="" class="work-item-thumb">
+            <a href="https://web.archive.org/web/20240427140308/https://modliftx.com/" title="Mod Lift X (MLX)" target="_blank" rel="noreferrer">
+              <img src="img/web/mlx--prelaunch-landing-page---crop.jpg" alt="" class="work-item-thumb">
+            </a>
             <h3 class="work-item-title">Mod Lift X (MLX)</h3>
             <div class="work-item-categories">
               <h6 class="work-item-category">
@@ -57,46 +90,47 @@
                 Copywriting
               </h6>
               <h6 class="work-item-category">
-                Logo
-              </h6>
-              <h6 class="work-item-category">
-                Print
+                Design
               </h6>
             </div>
           </div>
           
+          <!-- AF -->
           <div class="work-item">
-            <img src="img/web/covid.png" alt="" class="work-item-thumb">
-            <h3 class="work-item-title">FL Dept. of Health: Covid-19</h3>
-            <h6 class="work-item-category">Full-Stack Developement</h6>
-          </div>
-          
-          <div class="work-item">
-            <img src="img/web/healthprex.png" alt="" class="work-item-thumb">
-            <h3 class="work-item-title">Healthprex</h3>
-            <h6 class="work-item-category">Full-Stack Developement</h6>
-          </div>
-          
-          <div class="work-item">
-            <img src="img/web/culpepper.png" alt="" class="work-item-thumb">
-            <h3 class="work-item-title">Culpepper Construction</h3>
-            <h6 class="work-item-category">Full-Stack Developement</h6>
-          </div>
-          
-          <div class="work-item">
-            <img src="img/web/airfoil.png" alt="" class="work-item-thumb">
+            <a href="https://airfoilgroup.com/" title="Airfoil Group" target="_blank" rel="noreferrer">
+              <img src="img/web/airfoil.png" alt="" class="work-item-thumb">
+            </a>
             <h3 class="work-item-title">Airfoil Group</h3>
             <h6 class="work-item-category">Full-Stack Developement</h6>
           </div>
           
+          <!-- HP -->
           <div class="work-item">
-            <img src="img/web/fga.png" alt="" class="work-item-thumb">
-            <h3 class="work-item-title">Fitzgerald Gray Hagan Architects</h3>
-            <div class="work-item-categories">
-              <h6 class="work-item-category">Front-End Development</h6>
-              <h6 class="work-item-category">UX Consulting</h6>
-            </div>
+            <a href="https://healthprex.com/" title="Healthprex" target="_blank" rel="noreferrer">
+              <img src="img/web/healthprex.png" alt="" class="work-item-thumb">
+            </a>
+            <h3 class="work-item-title">Healthprex</h3>
+            <h6 class="work-item-category">Full-Stack Developement</h6>
           </div>
+          
+          <!-- CC -->
+          <div class="work-item">
+            <a href="https://culpepperconstruction.com/" title="Culpepper Construction" target="_blank" rel="noreferrer">
+              <img src="img/web/culpepper.png" alt="" class="work-item-thumb">
+            </a>
+            <h3 class="work-item-title">Culpepper Construction</h3>
+            <h6 class="work-item-category">Full-Stack Developement</h6>
+          </div>
+          
+          <!-- FDOH -->
+          <div class="work-item">
+            <a href="https://web.archive.org/web/20220418013820/https://floridahealthcovid19.gov/" title="FL Dept. of Health: Covid-19" target="_blank" rel="noreferrer">
+              <img src="img/web/covid.png" alt="" class="work-item-thumb">
+            </a>
+            <h3 class="work-item-title">FL Dept. of Health: Covid-19</h3>
+            <h6 class="work-item-category">Full-Stack Developement</h6>
+          </div>
+
         </div>
 
       </section>
@@ -113,20 +147,34 @@
 
         <div class="work-grid work-grid--design">
           
+          <div class="work-item">
+            <a href="/video/personal-site-draft-demo-vid.webm" data-fslightbox data-autoplay data-caption="My new personal site. In progress but I think it's cool." title="View full item in a pop up gallery">
+              <img src="img/web/me.png" alt="" class="work-item-thumb">
+            </a>
+          </div>
+
           <div class="work-item" id="jh-logo-1">
-            <img src="img/design/fancy-gradient-one-for-notion.png" alt="" class="work-item-thumb">
+            <a href="img/design/fancy-gradient-one-for-notion.png" data-fslightbox data-caption="An old logo I did for myself when freelancing." title="View full item in a pop up gallery">
+              <img src="img/design/fancy-gradient-one-for-notion.png" alt="JH monogram logo" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item" id="jh-logo-2">
-            <img src="img/design/jh-logo-minimal-v4.png" alt="" class="work-item-thumb">
+            <a href="img/design/jh-logo-minimal-v4.png" data-fslightbox data-caption="Newer personal logo I've used for random things." title="View full item in a pop up gallery">
+              <img src="img/design/jh-logo-minimal-v4.png" alt="Another JH monogram logo" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/higgs-sewing-circle--white-mock-8k.png" alt="" class="work-item-thumb">
+            <a href="img/design/higgs-sewing-circle--white-mock-8k.png" data-fslightbox data-caption="Family inside joke project." title="View full item in a pop up gallery">
+              <img src="img/design/higgs-sewing-circle--white-mock-8k.png" alt="Higgs Sewing Circle emblem" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/higgs-sewing-circle--shirt-mock.jpg" alt="" class="work-item-thumb">
+            <a href="img/design/higgs-sewing-circle--shirt-mock.jpg" title="T-shirt mockup with Higgs Sewing Circle design" data-fslightbox data-caption="Family inside joke project. This is a mockup because the shirts are pretty thoroughly worn. Also did some screen printed tumblers." title="View full item in a pop up gallery">
+              <img src="img/design/higgs-sewing-circle--shirt-mock.jpg" alt="T-shirt mockup with Higgs Sewing Circle design" class="work-item-thumb">
+            </a>
           </div>
         
         </div>
@@ -138,41 +186,63 @@
         <div class="work-grid work-grid--design">
           
           <div class="work-item">
-            <img src="img/design/mlx/mlx-logo--red-v2.png" alt="" class="work-item-thumb">
+            <a href="img/design/mlx/mlx-logo--red-v2.png" data-fslightbox data-caption="Main logo for MLX. Produced variants for monochrome, dark/light backgrounds, and tiled patterns." title="View full item in a pop up gallery">
+              <img src="img/design/mlx/mlx-logo--red-v2.png" alt="MLX logo" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/mlx/the-x--black-on-red.png" alt="" class="work-item-thumb">
+            <a href="img/design/mlx/the-x--black-on-red.png" data-fslightbox data-caption="X icon for accents, small spots" title="View full item in a pop up gallery">
+              <img src="img/design/mlx/the-x--black-on-red.png" alt="MLX X mark" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/mlx/split-x--black-on-red.png" alt="" class="work-item-thumb">
+            <a href="img/design/mlx/split-x--black-on-red.png" data-fslightbox data-caption="Split X icon, for spicing up layouts" title="View full item in a pop up gallery">
+              <img src="img/design/mlx/split-x--black-on-red.png" alt="MLX half-X mark" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/mlx/mlx-brand-style-guide--basic.png" alt="" class="work-item-thumb">
+            <a href="img/design/mlx/mlx-brand-style-guide--basic.png" data-fslightbox data-caption="Produced a general style guide for the brand since they were going to be handling marketing internally after the project completed. It unfortunately wasn't followed but it was a good exercise." title="View full item in a pop up gallery">
+              <img src="img/design/mlx/mlx-brand-style-guide--basic.png" alt="MLX internal brand guide" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/mlx/mlx-4x8-banner-v1.png" alt="" class="work-item-thumb">
+            <a href="img/design/mlx/mlx-4x8-banner-v1.png" data-fslightbox data-caption="4'x8' large format banner made for a trade show/expo" title="View full item in a pop up gallery">
+              <img src="img/design/mlx/mlx-4x8-banner-v1.png" alt="MLX 4x8' banner" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/mlx/mlx-vertical-retractable-banner--white.png" alt="" class="work-item-thumb">
+            <a href="img/design/mlx/mlx-vertical-retractable-banner--white.png" data-fslightbox data-caption="Vertical banner made for retractable stanchions at a trade show/expo" title="View full item in a pop up gallery">
+              <img src="img/design/mlx/mlx-vertical-retractable-banner--white.png" alt="MLX vertical stanchion banner" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/mlx/mlx-in-store-promo-card--front.png" alt="" class="work-item-thumb">
-            <img src="img/design/mlx/mlx-in-store-promo-card--back.png" alt="" class="work-item-thumb">
+            <a href="img/design/mlx/mlx-in-store-promo-card--front.png" data-fslightbox data-caption="Retail in-store promo card, front side" title="View full item in a pop up gallery">
+              <img src="img/design/mlx/mlx-in-store-promo-card--front.png" alt="MLX in-store promo card, front side" class="work-item-thumb">
+            </a>
+            <a href="img/design/mlx/mlx-in-store-promo-card--back.png" data-fslightbox data-caption="Retail in-store promo card, back side" title="View full item in a pop up gallery">
+              <img src="img/design/mlx/mlx-in-store-promo-card--back.png" alt="MLX in-store promo card, back side" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/mlx/mlx-business-card--front.png" alt="" class="work-item-thumb">
-            <img src="img/design/mlx/mlx-business-card--back.png" alt="" class="work-item-thumb">
+            <a href="img/design/mlx/mlx-business-card--front.png" data-fslightbox data-caption="Business card, front side" title="View full item in a pop up gallery">
+              <img src="img/design/mlx/mlx-business-card--front.png" alt="MLX business card, front side" class="work-item-thumb">
+            </a>
+            <a href="img/design/mlx/mlx-business-card--back.png" data-fslightbox data-caption="Business card, anti-front side" title="View full item in a pop up gallery">
+              <img src="img/design/mlx/mlx-business-card--back.png" alt="MLX business card, back side" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/mlx/mlx-retail-package-insert--v2.png" alt="" class="work-item-thumb">
+            <a href="img/design/mlx/mlx-retail-package-insert--v2.png" data-fslightbox data-caption="Insert for retail packaging" title="View full item in a pop up gallery">
+              <img src="img/design/mlx/mlx-retail-package-insert--v2.png" alt="MLX retail packaging insert" class="work-item-thumb">
+            </a>
           </div>
 
         </div>
@@ -184,39 +254,57 @@
         <div class="work-grid work-grid--design">
           
           <div class="work-item">
-            <img src="img/design/hyperfocus/hf_logo_eye--rgb.png" alt="" class="work-item-thumb">
+            <a href="img/design/hyperfocus/hf_logo_eye--rgb.png" data-fslightbox data-caption="Variant of eye illustration for Hyperfocus Records, lots of extra effects" title="View full item in a pop up gallery">
+              <img src="img/design/hyperfocus/hf_logo_eye--rgb.png" alt="Hyperfocus eye illustration with visual effects" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/hyperfocus/eye--black.png" alt="" class="work-item-thumb">
+            <a href="img/design/hyperfocus/eye--black.png" data-fslightbox data-caption="Original, final eye illustration, done on digital drawing tablet" title="View full item in a pop up gallery">
+              <img src="img/design/hyperfocus/eye--black.png" alt="Hyperfocus eye illustration, plain" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/hyperfocus/temp-v69.png" alt="" class="work-item-thumb">
+            <a href="img/design/hyperfocus/temp-v69.png" data-fslightbox data-caption="Draft version of eye illustration" title="View full item in a pop up gallery">
+              <img src="img/design/hyperfocus/temp-v69.png" alt="Hyperfocus eye illustration, draft version" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/hyperfocus/HF_Founder_2.jpg" alt="" class="work-item-thumb">
+            <a href="img/design/hyperfocus/HF_Founder_2.jpg" data-fslightbox data-caption="Variant of the eye illustration on a limited-run t-shirts" title="View full item in a pop up gallery">
+              <img src="img/design/hyperfocus/HF_Founder_2.jpg" alt="Hyperfocus eye illustration on t-shirt" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/hyperfocus/hyperfocus-records.png" alt="" class="work-item-thumb">
+            <a href="img/design/hyperfocus/hyperfocus-records.png" data-fslightbox data-caption="Hyperfocus Records website using a variant of the eye illustration" title="View full item in a pop up gallery">
+              <img src="img/design/hyperfocus/hyperfocus-records.png" alt="Hyperfocus website using variant of eye illustration" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/hyperfocus/6f226ed9-9a20-4aa2-98eb-2b4d721e1126-0004.png" alt="" class="work-item-thumb">
+            <a href="img/design/hyperfocus/6f226ed9-9a20-4aa2-98eb-2b4d721e1126-0004.png" data-fslightbox data-caption="Some logo brainstorming" title="View full item in a pop up gallery">
+              <img src="img/design/hyperfocus/6f226ed9-9a20-4aa2-98eb-2b4d721e1126-0004.png" alt="Hyperfocus branding brainstorming notes" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/hyperfocus/6f226ed9-9a20-4aa2-98eb-2b4d721e1126-0005.png" alt="" class="work-item-thumb">
+            <a href="img/design/hyperfocus/6f226ed9-9a20-4aa2-98eb-2b4d721e1126-0005.png" data-fslightbox data-caption="Some logo brainstorming" title="View full item in a pop up gallery">
+              <img src="img/design/hyperfocus/6f226ed9-9a20-4aa2-98eb-2b4d721e1126-0005.png" alt="Hyperfocus branding brainstorming notes" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/hyperfocus/6f226ed9-9a20-4aa2-98eb-2b4d721e1126-0006.png" alt="" class="work-item-thumb">
+            <a href="img/design/hyperfocus/6f226ed9-9a20-4aa2-98eb-2b4d721e1126-0006.png" data-fslightbox data-caption="Some logo brainstorming" title="View full item in a pop up gallery">
+              <img src="img/design/hyperfocus/6f226ed9-9a20-4aa2-98eb-2b4d721e1126-0006.png" alt="Hyperfocus branding brainstorming notes" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/hyperfocus/6f226ed9-9a20-4aa2-98eb-2b4d721e1126-0007.png" alt="" class="work-item-thumb">
+            <a href="img/design/hyperfocus/6f226ed9-9a20-4aa2-98eb-2b4d721e1126-0007.png" data-fslightbox data-caption="Some logo brainstorming" title="View full item in a pop up gallery">
+              <img src="img/design/hyperfocus/6f226ed9-9a20-4aa2-98eb-2b4d721e1126-0007.png" alt="Hyperfocus branding brainstorming notes" class="work-item-thumb">
+            </a>
           </div>
         
         </div>
@@ -229,19 +317,27 @@
         <div class="work-grid work-grid--design">
           
           <div class="work-item">
-            <img src="img/design/nanoshrine/nanoshrine-mark-final.png" alt="" class="work-item-thumb">
+            <a href="img/design/nanoshrine/nanoshrine-mark-final.png" data-fslightbox data-caption="Abstract N icon for Nanoshrine Interactive" title="View full item in a pop up gallery">
+              <img src="img/design/nanoshrine/nanoshrine-mark-final.png" alt="Nanoshrine icon, final version" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/nanoshrine/nanoshrine-mark-on-orb.png" alt="" class="work-item-thumb">
+            <a href="img/design/nanoshrine/nanoshrine-mark-on-orb.png" data-fslightbox data-caption="N icon used in 3D sci-fi sphere for website" title="View full item in a pop up gallery">
+              <img src="img/design/nanoshrine/nanoshrine-mark-on-orb.png" alt="Nanoshrine icon on abstract 3D sci-fi sphere" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/nanoshrine/nanoshrine.png" alt="" class="work-item-thumb">
+            <a href="img/design/nanoshrine/nanoshrine.png" data-fslightbox data-caption="Icon in use on immersive 3D website" title="View full item in a pop up gallery">
+              <img src="img/design/nanoshrine/nanoshrine.png" alt="Nanoshrine icon in use on immersive 3D website" class="work-item-thumb">
+            </a>
           </div>
 
           <div class="work-item">
-            <img src="img/design/nanoshrine/nanoshrine-mark-draft-3d.png" alt="" class="work-item-thumb">
+            <a href="img/design/nanoshrine/nanoshrine-mark-draft-3d.png" data-fslightbox data-caption="Early draft of N design" title="View full item in a pop up gallery">
+              <img src="img/design/nanoshrine/nanoshrine-mark-draft-3d.png" alt="Nanoshrine icon, early draft" class="work-item-thumb">
+            </a>
           </div>
 
         </div>
@@ -254,19 +350,27 @@
         <div class="work-grid work-grid--design">
           
           <div class="work-item">
-            <img src="img/design/crystal-portal-lgo.png" alt="" class="work-item-thumb">
+            <a href="img/design/crystal-portal-lgo.png" data-fslightbox data-caption="Logo for Crystal Portal" title="View full item in a pop up gallery">
+              <img src="img/design/crystal-portal-lgo.png" alt="Crystal Portal logo" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/logo-final.png" alt="" class="work-item-thumb">
+            <a href="img/design/logo-final.png" data-fslightbox data-caption="Logo for Heart & Sol yoga/wellness studio" title="View full item in a pop up gallery">
+              <img src="img/design/logo-final.png" alt="Heart & Sol Yoga Studio logo" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/design/estellaseaster2.png" alt="" class="work-item-thumb">
+            <a href="img/design/estellaseaster2.png" data-fslightbox data-caption="Old Easter part flyer made for family" title="View full item in a pop up gallery">
+              <img src="img/design/estellaseaster2.png" alt="Old family Easter flyer" class="work-item-thumb">
+            </a>
           </div>
 
           <div class="work-item">
-            <img src="img/design/ewa-banner.png" alt="" class="work-item-thumb">
+            <a href="img/design/ewa-banner.png" data-fslightbox data-caption="Card/sticker for Everywear Art, artisan jewelry maker" title="View full item in a pop up gallery">
+              <img src="img/design/ewa-banner.png" alt="Card/sticker for Everywear Art, artisan jewelry maker" class="work-item-thumb">
+            </a>
           </div>
 
         </div>
@@ -282,40 +386,64 @@
         <div class="work-grid work-grid--design">
           
           <div class="work-item">
-            <img src="img/art/IMG_4218.jpg" alt="" class="work-item-thumb">
+            <a href="img/art/IMG_4218.jpg" data-fslightbox data-caption="Latest serious drawing I've done" title="View full item in a pop up gallery">
+              <img src="img/art/IMG_4218.jpg" alt="Pencil drawing of surreal cabin on floating rock" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/art/IMG_4220.jpg" alt="" class="work-item-thumb">
+            <a href="img/art/IMG_4220.jpg" data-fslightbox data-caption="I call this one 'Masochism in Pilot G2'" title="View full item in a pop up gallery">
+              <img src="img/art/IMG_4220.jpg" alt="Surreal, abstract art in ink" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/art/IMG_4223.jpg" alt="" class="work-item-thumb">
+            <a href="img/art/IMG_4223.jpg" data-fslightbox data-caption="Sticky note doodle. I do lots of sticky note art and sometimes leave them on community boards at cafes" title="View full item in a pop up gallery">
+              <img src="img/art/IMG_4223.jpg" alt="Surreal sticky-note art" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/art/IMG_4225.jpg" alt="" class="work-item-thumb">
+            <a href="img/art/IMG_4225.jpg" data-fslightbox data-caption="Old but a favorite" title="View full item in a pop up gallery">
+              <img src="img/art/IMG_4225.jpg" alt="Surreal pencil drawing of various objects" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/art/627680506_18386137915149100_5507937328196953827_n.jpg" alt="" class="work-item-thumb">
+            <a href="img/art/627680506_18386137915149100_5507937328196953827_n.jpg" data-fslightbox data-caption="'Squimby', as named by a friend" title="View full item in a pop up gallery">
+              <img src="img/art/627680506_18386137915149100_5507937328196953827_n.jpg" alt="Squimby, as named by a friend" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/art/640422149_18565883662015623_8721331986915985615_n.jpg" alt="" class="work-item-thumb">
+            <a href="img/art/640422149_18565883662015623_8721331986915985615_n.jpg" data-fslightbox data-caption="Practice drawing of a cedar tree" title="View full item in a pop up gallery">
+              <img src="img/art/640422149_18565883662015623_8721331986915985615_n.jpg" alt="Pencil sketch of cedar tree" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/art/663238586_18396477652149100_6429541404236225386_n.jpg" alt="" class="work-item-thumb">
+            <a href="img/art/663238586_18396477652149100_6429541404236225386_n.jpg" data-fslightbox data-caption="Sometimes I force myself to keep it simple" title="View full item in a pop up gallery">
+              <img src="img/art/663238586_18396477652149100_6429541404236225386_n.jpg" alt="Just a silly little sticky note drawing of a cat in boots" class="work-item-thumb">
+            </a>
           </div>
           
           <div class="work-item">
-            <img src="img/art/748194171_18410793517149100_4003713474922290810_n.jpg" alt="" class="work-item-thumb">
+            <a href="img/art/748194171_18410793517149100_4003713474922290810_n.jpg" data-fslightbox data-caption="Just a weird little guy in an armchair" title="View full item in a pop up gallery">
+              <img src="img/art/748194171_18410793517149100_4003713474922290810_n.jpg" alt="Just a silly sticky note drawing of a rat in a nice armchair" class="work-item-thumb">
+            </a>
+          </div>
+          
+          <div class="work-item">
+            <a href="img/art/20260914_193911~2.jpg" data-fslightbox data-caption="First time trying colored pencils in years on a hike" title="View full item in a pop up gallery">
+              <img src="img/art/20260914_193911~2.jpg" alt="Sketch of trees and mountain in colored pencil" class="work-item-thumb">
+            </a>
           </div>
 
         </div>
 
       </section>
     </main>
+
+    <script src="/js/fslightbox.js"></script>
   </body>
 </html>
