@@ -12,12 +12,22 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--syne);
 }
 
-p {
+p, a {
   color: #C9EDD4;
   font-family: var(--hanken);
 }
 
+a
+
 /* Page */
+:root, html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+	background-color: brown;
+}
+
 .container {
   padding-bottom: 11rem;
 }
@@ -49,6 +59,10 @@ header {
   font-weight: 300;
   letter-spacing: 0.035em;
   color: var(--med-green);
+}
+
+.header__subheading a {
+  --pico-underline: #329550;
 }
 
 .header__copy {
@@ -121,6 +135,8 @@ header {
 }
 
 .section--web .work-item-thumb {
+  object-fit: cover;
+  aspect-ratio: 5/4;
   margin-bottom: 1rem;
 }
 
