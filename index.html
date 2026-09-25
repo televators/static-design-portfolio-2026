@@ -6,6 +6,11 @@
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="pico-main/css/pico.min.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/litelight-js@1.2.0/dist/lite-light.min.css">
+    <script type="module">
+      import { init } from 'https://unpkg.com/litelight-js@1.2.0/dist/lite-light.min.js';
+      init();
+    </script>
     <title>Justin Higgs - Portfolio</title>
   </head>
   <body>
@@ -17,7 +22,7 @@
         <p class="header__copy">Here’s a smattering of things I've worked on, in no particular order.</p>
       </header>
       
-      <section class="section--web">
+      <section class="section--web" id="web">
         <h3 class="work-grid__category-heading">
           Dev
         </h3>
@@ -96,7 +101,7 @@
 
       </section>
 
-      <section class="section--design">
+      <section class="section--design" id="design">
         <h3 class="work-grid__category-heading">
           Design
         </h3>

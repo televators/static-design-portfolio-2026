@@ -1,11 +1,25 @@
+/* Vars */
+:root {
+  --dark-green: #329550;
+  --med-green: #89D5A0;
+  --light-green: #C9EDD4;
+  --syne: "Syne", sans-serif;
+  --hanken: "Hanken Grotesk", sans-serif;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Syne", sans-serif;
+  font-family: var(--syne);
 }
 
 p {
   color: #C9EDD4;
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: var(--hanken);
+}
+
+/* Page */
+.container {
+  padding-bottom: 11rem;
 }
 
 /* Header */
@@ -26,15 +40,15 @@ header {
   margin-block: 2rem 1rem;
   font-family: Syne;
   font-weight: 900;
-  color: #329550;
+  color: var(--dark-green);
 }
 
 .header__subheading {
   font-size: 1.3rem;
-  font-family: "Hanken Grotesk";
+  font-family: var(--hanken);
   font-weight: 300;
   letter-spacing: 0.035em;
-  color: #89D5A0;
+  color: var(--med-green);
 }
 
 .header__copy {
@@ -42,23 +56,42 @@ header {
   text-align: center;
 }
 
+/* Work Sections */
+.section--web, .section--design {
+  margin-bottom: 5rem;
+}
 
 /* Work Grid */
 .work-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+.work-grid--design {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
 }
 
 @media screen and (max-width: 1023px) {
   .work-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-grid--design {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
   }
 }
 
 @media screen and (max-width: 767px) {
   .work-grid {
     grid-template-columns: 1fr;
+  }
+
+  .work-grid--design {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
   }
 }
 
@@ -73,23 +106,42 @@ header {
   margin-bottom: 1rem;
 }
 
+.work-grid__client-heading {
+  font-family: var(--hanken);
+  font-weight: 400;
+  letter-spacing: 0.015em;
+  color: #fff;
+}
+
+.work-grid__category-heading {
+  color: var(--light-green);
+}
+
 .work-item-title {
-  color: #C9EDD4;
+  color: #fff;
+  font-family: var(--hanken);
   font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.work-item-categories {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5em;
 }
 
 .work-item-category {
-  font-size: 0.9rem;
-}
-
-.work-item-category {
-  background: rgb(47, 79, 68);
-  display: inline-block;
-  width: auto;
   flex: 0 1 auto;
+  display: inline-block;
+  min-width: 8.5ch;
+  width: auto;
+  margin: 0;
   padding: 0.5em 0.75em;
   border-radius: 3rem;
+  background: rgb(47, 79, 68);
+  color: #fff;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #fff;
+  text-align: center;
 }
