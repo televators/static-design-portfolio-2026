@@ -10,27 +10,26 @@
 
 /* Fonts */
 @font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('fonts/subset-HankenGrotesk-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('fonts/subset-HankenGrotesk-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Syne';
-  src: url('/fonts/Syne-Variable.woff2') format('woff2-variations'),
-       url('/fonts/Syne-Variable.woff2') format('woff2');
-  font-weight: 400 800;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Hanken Grotesk';
-  src: url('/fonts/HankenGrotesk-Italic-Variable.woff2') format('woff2-variations'),
-       url('/fonts/HankenGrotesk-Italic-Variable.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Hanken Grotesk';
-  src: url('/fonts/HankenGrotesk-Variable.woff2') format('woff2-variations'),
-       url('/fonts/HankenGrotesk-Variable.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('fonts/subset-Syne-Extra.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
   font-display: swap;
 }
 
