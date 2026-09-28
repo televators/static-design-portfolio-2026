@@ -160,11 +160,11 @@ header {
   z-index: 1;
 }
 
-.work-item:has(.work-item-thumb + .work-item-thumb) {
+.work-item:has(a + a) {
   padding-right: 20px;
 }
 
-.work-item-thumb + .work-item-thumb {
+a:has(.work-item-thumb) + a:has(.work-item-thumb) {
   position: absolute;
   z-index: 0;
   transform: translate(20px, 20px);
@@ -172,7 +172,7 @@ header {
 }
 
 @media screen and (max-width: 581px) {
-  .work-item-thumb + .work-item-thumb {
+  a:has(.work-item-thumb) + a:has(.work-item-thumb) {
     position: absolute;
     z-index: 0;
     transform: translate(20px, 30px);
@@ -180,7 +180,8 @@ header {
   }
 }
 
-.work-item-thumb:has(+ .work-item-thumb) {
+.work-item:has(a + a) a:first-of-type {
+  z-index: 1;
   filter: drop-shadow(5px 5px 2.5px #13171f82);
 }
 
